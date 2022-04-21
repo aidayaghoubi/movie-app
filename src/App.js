@@ -1,12 +1,16 @@
 
 import './App.css';
 import SearchMovie from './components/search/search';
+import Router from './router/router';
+import Header from './main/header';
 
 function App() {
   return (
-    <div className="App">
-      <SearchMovie></SearchMovie>
-    </div>
+    <>
+    <Header></Header>
+    <Router></Router>
+    </>
+
   );
 }
 
