@@ -12,21 +12,20 @@ const Home = () => {
 
     console.log("home is calles")
     return <>
-    <p>hi its home</p>
-    <AutoplaySlider 
+    {/* <AutoplaySlider 
         cssModule={AwesomeSliderStyles}
         play={true}
         interval={6000}
         buttons={false}
         bullets={false}
-        className={sliderrr}
+        
         >
     <div >
         <img src={image1}/>
     </div>
     <div data-src={image2} />
     <div data-src={image3} />
-  </AutoplaySlider>
+  </AutoplaySlider> */}
     <SearchMovie></SearchMovie>
     </>
 }
