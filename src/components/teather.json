@@ -1,0 +1,361 @@
+{
+    "items": [
+        {
+            "id": "tt11138512",
+            "title": "The Northman",
+            "fullTitle": "The Northman (2022)",
+            "year": "2022",
+            "releaseState": "Opening This Week - April 22",
+            "image": "https://m.media-amazon.com/images/M/MV5BMzVlMmY2NTctODgwOC00NDMzLWEzMWYtM2RiYmIyNTNhMTI0XkEyXkFqcGdeQXVyNTAzNzgwNTg@._V1_UX128_CR0,4,128,176_AL_.jpg",
+            "runtimeMins": "136",
+            "runtimeStr": "2h 16mins",
+            "plot": "From visionary director Robert Eggers comes The Northman, an action-filled epic that follows a young Viking prince on his quest to avenge his father's murder.",
+            "contentRating": "R",
+            "imDbRating": "",
+            "imDbRatingCount": "",
+            "metacriticRating": "82",
+            "genres": "Action, Adventure, Drama, Fantasy, History, Thriller",
+            "genreList": [
+                {
+                    "key": "Action",
+                    "value": "Action"
+                },
+                {
+                    "key": "Adventure",
+                    "value": "Adventure"
+                },
+                {
+                    "key": "Drama",
+                    "value": "Drama"
+                },
+                {
+                    "key": "Fantasy",
+                    "value": "Fantasy"
+                },
+                {
+                    "key": "History",
+                    "value": "History"
+                },
+                {
+                    "key": "Thriller",
+                    "value": "Thriller"
+                }
+            ],
+            "directors": "Robert Eggers",
+            "directorList": [
+                {
+                    "id": "nm3211470",
+                    "name": "Robert Eggers"
+                }
+            ],
+            "stars": "Alexander Skarsgård, Nicole Kidman, Claes Bang, Ethan Hawke",
+            "starList": [
+                {
+                    "id": "nm0002907",
+                    "name": "Alexander Skarsgård"
+                },
+                {
+                    "id": "nm0000173",
+                    "name": "Nicole Kidman"
+                },
+                {
+                    "id": "nm0051903",
+                    "name": "Claes Bang"
+                },
+                {
+                    "id": "nm0000160",
+                    "name": "Ethan Hawke"
+                }
+            ]
+        },
+        {
+            "id": "tt11291274",
+            "title": "The Unbearable Weight of Massive Talent",
+            "fullTitle": "The Unbearable Weight of Massive Talent (2022)",
+            "year": "2022",
+            "releaseState": "Opening This Week - April 22",
+            "image": "https://m.media-amazon.com/images/M/MV5BNDM2ODNiMWItOWRkNS00ODE3LWE2OGYtNTZkMDJkOWI1ODMxXkEyXkFqcGdeQXVyMjMxOTE0ODA@._V1_UX128_CR0,4,128,176_AL_.jpg",
+            "runtimeMins": "107",
+            "runtimeStr": "1h 47mins",
+            "plot": "A cash-strapped Nicolas Cage agrees to make a paid appearance at a billionaire super fan's birthday party, but is really an informant for the CIA since the billionaire fan is a drug kingpin and gets cast in a Tarantino movie.",
+            "contentRating": "R",
+            "imDbRating": "",
+            "imDbRatingCount": "",
+            "metacriticRating": "68",
+            "genres": "Action, Comedy, Crime, Thriller",
+            "genreList": [
+                {
+                    "key": "Action",
+                    "value": "Action"
+                },
+                {
+                    "key": "Comedy",
+                    "value": "Comedy"
+                },
+                {
+                    "key": "Crime",
+                    "value": "Crime"
+                },
+                {
+                    "key": "Thriller",
+                    "value": "Thriller"
+                }
+            ],
+            "directors": "Tom Gormican",
+            "directorList": [
+                {
+                    "id": "nm3230448",
+                    "name": "Tom Gormican"
+                }
+            ],
+            "stars": "Nicolas Cage, Pedro Pascal, Tiffany Haddish, Sharon Horgan",
+            "starList": [
+                {
+                    "id": "nm0000115",
+                    "name": "Nicolas Cage"
+                },
+                {
+                    "id": "nm0050959",
+                    "name": "Pedro Pascal"
+                },
+                {
+                    "id": "nm1840504",
+                    "name": "Tiffany Haddish"
+                },
+                {
+                    "id": "nm1279721",
+                    "name": "Sharon Horgan"
+                }
+            ]
+        },
+        {
+            "id": "tt8115900",
+            "title": "The Bad Guys",
+            "fullTitle": "The Bad Guys (2022)",
+            "year": "2022",
+            "releaseState": "Opening This Week - April 22",
+            "image": "https://m.media-amazon.com/images/M/MV5BMDhkYmU0MzctMWEzNy00ODg1LWI3ZjAtMGZlZjkzNWVmMzVjXkEyXkFqcGdeQXVyMTM1MTE1NDMx._V1_UX128_CR0,4,128,176_AL_.jpg",
+            "runtimeMins": "100",
+            "runtimeStr": "1h 40mins",
+            "plot": "Several reformed yet misunderstood criminal animals attempt to become good, with some disastrous results along the way.",
+            "contentRating": "PG",
+            "imDbRating": "",
+            "imDbRatingCount": "",
+            "metacriticRating": "62",
+            "genres": "Animation, Adventure, Comedy, Crime, Family",
+            "genreList": [
+                {
+                    "key": "Animation",
+                    "value": "Animation"
+                },
+                {
+                    "key": "Adventure",
+                    "value": "Adventure"
+                },
+                {
+                    "key": "Comedy",
+                    "value": "Comedy"
+                },
+                {
+                    "key": "Crime",
+                    "value": "Crime"
+                },
+                {
+                    "key": "Family",
+                    "value": "Family"
+                }
+            ],
+            "directors": "Pierre Perifel",
+            "directorList": [
+                {
+                    "id": "nm2010048",
+                    "name": "Pierre Perifel"
+                }
+            ],
+            "stars": "Sam Rockwell, Marc Maron, Awkwafina, Craig Robinson",
+            "starList": [
+                {
+                    "id": "nm0005377",
+                    "name": "Sam Rockwell"
+                },
+                {
+                    "id": "nm0549505",
+                    "name": "Marc Maron"
+                },
+                {
+                    "id": "nm5377144",
+                    "name": "Awkwafina"
+                },
+                {
+                    "id": "nm0732497",
+                    "name": "Craig Robinson"
+                }
+            ]
+        },
+        {
+            "id": "tt13204490",
+            "title": "Petite Maman",
+            "fullTitle": "Petite Maman (2021)",
+            "year": "2021",
+            "releaseState": "Opening This Week - April 22",
+            "image": "https://m.media-amazon.com/images/M/MV5BM2EyZjE2NWUtNTg4ZC00OThmLTlmMzktMmFkOWRmZTc4ZWMwXkEyXkFqcGdeQXVyMTM1MTE1NDMx._V1_UX128_CR0,3,128,176_AL_.jpg",
+            "runtimeMins": "72",
+            "runtimeStr": "1h 12mins",
+            "plot": "Nelly has just lost her grandmother and is helping her parents clean out her mother's childhood home. She explores the house and the surrounding woods. One day she meets a girl her same age building a treehouse.",
+            "contentRating": "PG",
+            "imDbRating": "",
+            "imDbRatingCount": "",
+            "metacriticRating": "94",
+            "genres": "Drama, Fantasy",
+            "genreList": [
+                {
+                    "key": "Drama",
+                    "value": "Drama"
+                },
+                {
+                    "key": "Fantasy",
+                    "value": "Fantasy"
+                }
+            ],
+            "directors": "Céline Sciamma",
+            "directorList": [
+                {
+                    "id": "nm1780037",
+                    "name": "Céline Sciamma"
+                }
+            ],
+            "stars": "Joséphine Sanz, Gabrielle Sanz, Nina Meurisse, Stéphane Varupenne",
+            "starList": [
+                {
+                    "id": "nm12311642",
+                    "name": "Joséphine Sanz"
+                },
+                {
+                    "id": "nm12311643",
+                    "name": "Gabrielle Sanz"
+                },
+                {
+                    "id": "nm0582889",
+                    "name": "Nina Meurisse"
+                },
+                {
+                    "id": "nm1336069",
+                    "name": "Stéphane Varupenne"
+                }
+            ]
+        },
+        {
+            "id": "tt8859236",
+            "title": "Hostile Territory",
+            "fullTitle": "Hostile Territory (2022)",
+            "year": "2022",
+            "releaseState": "Opening This Week - April 22",
+            "image": "https://m.media-amazon.com/images/M/MV5BN2QwMWM0YTgtYzA5Yy00NmM2LTk0MTMtNzI0YTkzMjUyNWI2XkEyXkFqcGdeQXVyMzA3MDIyOA@@._V1_UX128_CR0,4,128,176_AL_.jpg",
+            "runtimeMins": "153",
+            "runtimeStr": "2h 33mins",
+            "plot": "In post-civil war America, when a Union soldier is presumed dead, his children are mistakenly sent away on the orphan train. This is a wild-west story of people uniting for the greater good, and children forced to grow up quickly.",
+            "contentRating": "R",
+            "imDbRating": "",
+            "imDbRatingCount": "",
+            "metacriticRating": "",
+            "genres": "Drama, History, Western",
+            "genreList": [
+                {
+                    "key": "Drama",
+                    "value": "Drama"
+                },
+                {
+                    "key": "History",
+                    "value": "History"
+                },
+                {
+                    "key": "Western",
+                    "value": "Western"
+                }
+            ],
+            "directors": "Brian Presley",
+            "directorList": [
+                {
+                    "id": "nm0696169",
+                    "name": "Brian Presley"
+                }
+            ],
+            "stars": "Matt McCoy, Brea Bee, Brad Leland, Lew Temple",
+            "starList": [
+                {
+                    "id": "nm0566783",
+                    "name": "Matt McCoy"
+                },
+                {
+                    "id": "nm1538239",
+                    "name": "Brea Bee"
+                },
+                {
+                    "id": "nm0500894",
+                    "name": "Brad Leland"
+                },
+                {
+                    "id": "nm0854702",
+                    "name": "Lew Temple"
+                }
+            ]
+        },
+        {
+            "id": "tt11204094",
+            "title": "The Duke",
+            "fullTitle": "The Duke (2020)",
+            "year": "2020",
+            "releaseState": "Opening This Week - April 22",
+            "image": "https://m.media-amazon.com/images/M/MV5BYmQwYTIzNTgtNDNjNS00MTM2LWJkZmQtNDEwMjJkYWJlOTBmXkEyXkFqcGdeQXVyOTgxNDIzMTY@._V1_UX128_CR0,4,128,176_AL_.jpg",
+            "runtimeMins": "96",
+            "runtimeStr": "1h 36mins",
+            "plot": "In 1961, Kempton Bunton, a 60 year old taxi driver, steals Goya's portrait of the Duke of Wellington from the National Gallery in London.",
+            "contentRating": "R",
+            "imDbRating": "",
+            "imDbRatingCount": "",
+            "metacriticRating": "75",
+            "genres": "Biography, Comedy, Drama",
+            "genreList": [
+                {
+                    "key": "Biography",
+                    "value": "Biography"
+                },
+                {
+                    "key": "Comedy",
+                    "value": "Comedy"
+                },
+                {
+                    "key": "Drama",
+                    "value": "Drama"
+                }
+            ],
+            "directors": "Roger Michell",
+            "directorList": [
+                {
+                    "id": "nm0585011",
+                    "name": "Roger Michell"
+                }
+            ],
+            "stars": "Jim Broadbent, Heather Craney, Stephen Rashbrook, James Wilby",
+            "starList": [
+                {
+                    "id": "nm0000980",
+                    "name": "Jim Broadbent"
+                },
+                {
+                    "id": "nm0186452",
+                    "name": "Heather Craney"
+                },
+                {
+                    "id": "nm0711124",
+                    "name": "Stephen Rashbrook"
+                },
+                {
+                    "id": "nm0928134",
+                    "name": "James Wilby"
+                }
+            ]
+        }
+    ],
+    "errorMessage": ""
+}

@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 import styled, { css } from "styled-components"
 import logo from '../assets/Group 8.png'
@@ -8,17 +8,39 @@ const Transition = css`
 
 transition: 0.3s;
 `
-const OpenBtn=styled.div`
-    position: absolute;
-    top: 24px;
-    left: 18px;
-    cursor:pointer;
+const SlowTrans = css`
+transition: 0.5s;
 `
+const OpenBtn = styled.div`
+position: absolute;
+${SlowTrans};
+
+    & .open{
+        position: absolute;
+        left: 17px;
+        top: 6px;
+        cursor:pointer;
+        ${SlowTrans};
+    }
+    & .notOpen{
+        transform:rotate(180deg);
+        position: absolute;
+        left: 239px;
+        z-index: 99999;
+        top: 6px;
+        cursor:pointer;
+        ${SlowTrans};
+
+    }
+
+`
+
 
 const HeaderStyled = styled.div`
 margin: 0;
 padding: 0;
 position: fixed;
+top:0;
 z-index: 999;
 background-color: #fff;
 width: auto;
@@ -153,20 +175,36 @@ ${Transition};
 const Header = () => {
 
     const [active, setActive] = useState('home');
-    const [close, SetClose] = useState(true)
+    const [close, SetClose] = useState(true);
 
     const onLinkClickHandler = (props) => {
         setActive(props)
         SetClose(true)
+    }
 
-    }
     const onCloseHandler = () => {
-        SetClose(!close)
+        SetClose(!close);
     }
-    
+
+    // const container = document.querySelector("#root > div:last-child");
+    const container = document.querySelector("#root > div:nth-child(3)");
+
+    useEffect(()=>{
+        setTimeout(()=>{
+            if(!close){
+                container.style.transform="translate(115px , 0)";
+                
+            }else{
+                container.style.transform="translate(0px , 0)";
+            }
+        } , 50)
+   
+    }, [close])
+
+
 
     return <>
-        {
+        {/* {
             close && <OpenBtn className="open" onClick={onCloseHandler}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="26.988" height="17.429" viewBox="0 0 26.988 17.429">
                     <g id="fi-br-align-center" transform="translate(0 -3)">
@@ -176,17 +214,32 @@ const Header = () => {
                     </g>
                 </svg>
             </OpenBtn>
-        }
-        <HeaderStyled className="closee"
-            style={{ transform: close ? "translate(-250%,0)" : "translate(0px ,0px)" }}>
-            <div className="close">
-                <svg onClick={onCloseHandler} xmlns="http://www.w3.org/2000/svg" width="16.596" height="16.596" viewBox="0 0 16.596 16.596">
+        } */}
+
+        <OpenBtn onClick={onCloseHandler}>
+            <div className={close ? "open" : "notOpen"}>
+                {close ? <svg xmlns="http://www.w3.org/2000/svg" width="26.988" height="17.429" viewBox="0 0 26.988 17.429">
+                    <g id="fi-br-align-center" transform="translate(0 -3)">
+                        <path id="Path_10" data-name="Path 10" d="M1.687,6.374H25.3A1.687,1.687,0,0,0,25.3,3H1.687a1.687,1.687,0,1,0,0,3.374Z" transform="translate(0 0)" fill="#646765" />
+                        <path id="Path_13" data-name="Path 13" d="M25.3,13H1.687a1.687,1.687,0,1,0,0,3.374H25.3A1.687,1.687,0,0,0,25.3,13Z" transform="translate(0 -2.972)" fill="#646765" />
+                        <path id="Path_738" data-name="Path 738" d="M25.3,13H1.687a1.687,1.687,0,1,0,0,3.374H25.3A1.687,1.687,0,0,0,25.3,13Z" transform="translate(0 4.056)" fill="#646765" />
+                    </g>
+                </svg> : <svg onClick={onCloseHandler} xmlns="http://www.w3.org/2000/svg" width="16.596" height="16.596" viewBox="0 0 16.596 16.596">
                     <g id="fi-br-cross" transform="translate(0 -20.157)">
                         <path id="Path_102" data-name="Path 102" d="M9.765,8.3l6.528-6.527A1.038,1.038,0,0,0,14.825.3h0L8.3,6.832,1.771.3A1.038,1.038,0,0,0,.3,1.771L6.832,8.3.3,14.825a1.038,1.038,0,0,0,1.467,1.467L8.3,9.765l6.527,6.528a1.038,1.038,0,1,0,1.467-1.467Z" transform="translate(0 20.157)" fill="#646765" />
                     </g>
-                </svg>
+                </svg>}
+            </div>
+        </OpenBtn>
 
-
+        <HeaderStyled className="closee"
+            style={{ transform: close ? "translate(-250%,0)" : "translate(0px ,0px)" }}>
+            <div className="close">
+                {/* <svg onClick={onCloseHandler} xmlns="http://www.w3.org/2000/svg" width="16.596" height="16.596" viewBox="0 0 16.596 16.596">
+                    <g id="fi-br-cross" transform="translate(0 -20.157)">
+                        <path id="Path_102" data-name="Path 102" d="M9.765,8.3l6.528-6.527A1.038,1.038,0,0,0,14.825.3h0L8.3,6.832,1.771.3A1.038,1.038,0,0,0,.3,1.771L6.832,8.3.3,14.825a1.038,1.038,0,0,0,1.467,1.467L8.3,9.765l6.527,6.528a1.038,1.038,0,1,0,1.467-1.467Z" transform="translate(0 20.157)" fill="#646765" />
+                    </g>
+                </svg> */}
             </div>
             <div className="logo">
                 <img src={logo} />

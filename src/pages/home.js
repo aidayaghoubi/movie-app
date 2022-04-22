@@ -1,33 +1,30 @@
 import SearchMovie from "../components/search/search"
-import AwesomeSlider from "react-awesome-slider"
-import AwesomeSliderStyles from 'react-awesome-slider/dist/styles.css';
-import withAutoplay from 'react-awesome-slider/dist/autoplay';
-import image1 from '../assets/b909d49ac52c809a011bc45825711dfa.png'
-import image2 from '../assets/378a7e8e0eb738639e211130b4d56c83.png'
-import image3 from '../assets/ed64345f93aeab5df8f31043a2978b95.png'
+import RightSide from "../components/right-side";
+import Container from "../main/container";
+import Columns from "../main/column";
+import Slider from "../components/slider";
+import RandomBox from "../components/search/randomBox";
 
 const Home = () => {
 
-    const AutoplaySlider = withAutoplay(AwesomeSlider);
+    return <Container>
+        <Columns width="70%">
+            <RightSide />
+        </Columns>
+        <Columns width="30%">
+            <SearchMovie />
+            <RandomBox title="Most Popular" />
+            <RandomBox title="Comming Soon"/>
+        </Columns>
 
-    console.log("home is calles")
-    return <>
-    {/* <AutoplaySlider 
-        cssModule={AwesomeSliderStyles}
-        play={true}
-        interval={6000}
-        buttons={false}
-        bullets={false}
-        
-        >
-    <div >
-        <img src={image1}/>
-    </div>
-    <div data-src={image2} />
-    <div data-src={image3} />
-  </AutoplaySlider> */}
-    <SearchMovie></SearchMovie>
-    </>
+    </Container>
 }
 
 export default Home
+
+
+
+
+
+
+

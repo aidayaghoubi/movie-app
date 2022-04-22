@@ -1,0 +1,261 @@
+{
+    "items": [
+        {
+            "id": "tt11827628",
+            "title": "Memory",
+            "fullTitle": "Memory (2022)",
+            "year": "2022",
+            "releaseState": "April 29",
+            "image": "https://m.media-amazon.com/images/M/MV5BOGI5N2FhNzktZjZlNi00MmRjLWE1MmUtNjRlNzQyOGMzYjNhXkEyXkFqcGdeQXVyMDA4NzMyOA@@._V1_UX128_CR0,4,128,176_AL_.jpg",
+            "runtimeMins": "114",
+            "runtimeStr": "1h 54mins",
+            "plot": "An assassin-for-hire finds that he's become a target after he refuses to complete a job for a dangerous criminal organization. A remake of the 2003 Belgian film 'The Memory of a Killer'.",
+            "contentRating": "R",
+            "imDbRating": "",
+            "imDbRatingCount": "",
+            "metacriticRating": "",
+            "genres": "Action, Thriller",
+            "genreList": [
+                {
+                    "key": "Action",
+                    "value": "Action"
+                },
+                {
+                    "key": "Thriller",
+                    "value": "Thriller"
+                }
+            ],
+            "directors": "Martin Campbell",
+            "directorList": [
+                {
+                    "id": "nm0132709",
+                    "name": "Martin Campbell"
+                }
+            ],
+            "stars": "Liam Neeson, Monica Bellucci, Ray Stevenson, Guy Pearce",
+            "starList": [
+                {
+                    "id": "nm0000553",
+                    "name": "Liam Neeson"
+                },
+                {
+                    "id": "nm0000899",
+                    "name": "Monica Bellucci"
+                },
+                {
+                    "id": "nm0829032",
+                    "name": "Ray Stevenson"
+                },
+                {
+                    "id": "nm0001602",
+                    "name": "Guy Pearce"
+                }
+            ]
+        },
+        {
+            "id": "tt13142240",
+            "title": "Anaïs in Love",
+            "fullTitle": "Anaïs in Love (2021)",
+            "year": "2021",
+            "releaseState": "April 29",
+            "image": "https://m.media-amazon.com/images/M/MV5BM2NjMDA0YjEtNmVlOC00MTc0LTlkMjEtYTE0NTc0OGI5MTBhXkEyXkFqcGdeQXVyODA0MjgyNzM@._V1_UY176_CR2,0,128,176_AL_.jpg",
+            "runtimeMins": "98",
+            "runtimeStr": "1h 38mins",
+            "plot": "Follows Anaïs, a 30-year old woman that is broke and has a lover she doesn't think she loves anymore. She meets Daniel, who immediately falls for her. But Daniel lives with Emilie - whom Anaïs also falls for.",
+            "contentRating": "",
+            "imDbRating": "",
+            "imDbRatingCount": "",
+            "metacriticRating": "",
+            "genres": "Comedy, Drama, Romance",
+            "genreList": [
+                {
+                    "key": "Comedy",
+                    "value": "Comedy"
+                },
+                {
+                    "key": "Drama",
+                    "value": "Drama"
+                },
+                {
+                    "key": "Romance",
+                    "value": "Romance"
+                }
+            ],
+            "directors": "Charline Bourgeois-Tacquet",
+            "directorList": [
+                {
+                    "id": "nm6242100",
+                    "name": "Charline Bourgeois-Tacquet"
+                }
+            ],
+            "stars": "Anaïs Demoustier, Valeria Bruni Tedeschi, Denis Podalydès, Jean-Charles Clichet",
+            "starList": [
+                {
+                    "id": "nm1326732",
+                    "name": "Anaïs Demoustier"
+                },
+                {
+                    "id": "nm0116254",
+                    "name": "Valeria Bruni Tedeschi"
+                },
+                {
+                    "id": "nm0687914",
+                    "name": "Denis Podalydès"
+                },
+                {
+                    "id": "nm2806009",
+                    "name": "Jean-Charles Clichet"
+                }
+            ]
+        },
+        {
+            "id": "tt4061620",
+            "title": "Firebird",
+            "fullTitle": "Firebird (2021)",
+            "year": "2021",
+            "releaseState": "April 29",
+            "image": "https://m.media-amazon.com/images/M/MV5BYjhmMWY0ODAtMGRlZC00NGUwLWJlZGMtMzEzODkwODg1ZTA3XkEyXkFqcGdeQXVyMTM1MTE1NDMx._V1_UX128_CR0,4,128,176_AL_.jpg",
+            "runtimeMins": "107",
+            "runtimeStr": "1h 47mins",
+            "plot": "Firebird follows a handsome, soulful young soldier who embarks on a clandestine sexual affair with a charismatic fighter pilot on a Soviet Air Force Base at the height of 1970's Communist rule.",
+            "contentRating": "R",
+            "imDbRating": "",
+            "imDbRatingCount": "",
+            "metacriticRating": "",
+            "genres": "Drama, Romance",
+            "genreList": [
+                {
+                    "key": "Drama",
+                    "value": "Drama"
+                },
+                {
+                    "key": "Romance",
+                    "value": "Romance"
+                }
+            ],
+            "directors": "Peeter Rebane",
+            "directorList": [
+                {
+                    "id": "nm3818919",
+                    "name": "Peeter Rebane"
+                }
+            ],
+            "stars": "Tom Prior, Oleg Zagorodnii, Diana Pozharskaya, Jake Henderson",
+            "starList": [
+                {
+                    "id": "nm4350114",
+                    "name": "Tom Prior"
+                },
+                {
+                    "id": "nm8712362",
+                    "name": "Oleg Zagorodnii"
+                },
+                {
+                    "id": "nm7709590",
+                    "name": "Diana Pozharskaya"
+                },
+                {
+                    "id": "nm10379270",
+                    "name": "Jake Henderson"
+                }
+            ]
+        },
+        {
+            "id": "tt14821150",
+            "title": "Vortex",
+            "fullTitle": "Vortex (2021)",
+            "year": "2021",
+            "releaseState": "April 29",
+            "image": "https://m.media-amazon.com/images/M/MV5BMGY2MGYyYjMtODkzNy00MmJiLWIxNmQtYmVlOTgwMzBkODYwXkEyXkFqcGdeQXVyMTAyMjQ3NzQ1._V1_UX128_CR0,1,128,176_AL_.jpg",
+            "runtimeMins": "140",
+            "runtimeStr": "2h 20mins",
+            "plot": "The last days of an elderly couple stricken by dementia.",
+            "contentRating": "",
+            "imDbRating": "",
+            "imDbRatingCount": "",
+            "metacriticRating": "81",
+            "genres": "Drama",
+            "genreList": [
+                {
+                    "key": "Drama",
+                    "value": "Drama"
+                }
+            ],
+            "directors": "Gaspar Noé",
+            "directorList": [
+                {
+                    "id": "nm0637615",
+                    "name": "Gaspar Noé"
+                }
+            ],
+            "stars": "Dario Argento, Françoise Lebrun, Alex Lutz, Kylian Dheret",
+            "starList": [
+                {
+                    "id": "nm0000783",
+                    "name": "Dario Argento"
+                },
+                {
+                    "id": "nm0495950",
+                    "name": "Françoise Lebrun"
+                },
+                {
+                    "id": "nm3367478",
+                    "name": "Alex Lutz"
+                },
+                {
+                    "id": "nm13342922",
+                    "name": "Kylian Dheret"
+                }
+            ]
+        },
+        {
+            "id": "tt12519030",
+            "title": "Hatching",
+            "fullTitle": "Hatching (2022)",
+            "year": "2022",
+            "releaseState": "April 29",
+            "image": "https://m.media-amazon.com/images/M/MV5BZGNiNDQ2OTAtZWYwOS00ZGVlLThmNmItM2NlMDU5M2QxNzUyXkEyXkFqcGdeQXVyMTM1MTE1NDMx._V1_UX128_CR0,4,128,176_AL_.jpg",
+            "runtimeMins": "86",
+            "runtimeStr": "1h 26mins",
+            "plot": "A young gymnast who tries desperately to please her demanding mother, discovers a strange egg. She hides it and keeps it warm, but when it hatches, what emerges shocks them all.",
+            "contentRating": "",
+            "imDbRating": "",
+            "imDbRatingCount": "",
+            "metacriticRating": "75",
+            "genres": "Horror",
+            "genreList": [
+                {
+                    "key": "Horror",
+                    "value": "Horror"
+                }
+            ],
+            "directors": "Hanna Bergholm",
+            "directorList": [
+                {
+                    "id": "nm1028093",
+                    "name": "Hanna Bergholm"
+                }
+            ],
+            "stars": "Siiri Solalinna, Sophia Heikkilä, Jani Volanen, Reino Nordin",
+            "starList": [
+                {
+                    "id": "nm11995472",
+                    "name": "Siiri Solalinna"
+                },
+                {
+                    "id": "nm7884452",
+                    "name": "Sophia Heikkilä"
+                },
+                {
+                    "id": "nm0901346",
+                    "name": "Jani Volanen"
+                },
+                {
+                    "id": "nm0635107",
+                    "name": "Reino Nordin"
+                }
+            ]
+        }
+    ],
+    "errorMessage": ""
+}
