@@ -14,6 +14,7 @@ const Router = () => {
         <Route path="/favorite" element={<Favorite/>}/>
         <Route path="/last-checked" element={<LastChecked/>}/>
         <Route path="/watch-list" element={<WatchList/>}/>
+        <Route path="/list/:id" ></Route>
     </Routes>
 }
 

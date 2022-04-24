@@ -27,6 +27,7 @@ flex-direction:column;
         & img{
             height: 105px;
             border-radius: 5px;
+            max-width: 74px;
         }
         & div{
 
@@ -51,21 +52,22 @@ flex-direction:column;
    
 
     & input{
-        border-radius: 43px;
-        border: 1px solid;
+        border-radius: 19px;
+        border: none;
         border-color: #adaeb3;
         color: #686874;
-        width: 73%;
-        height: 52px;
+        width: 68%;
+        height: 46px;
         padding-left: 45px;
-        font-size: 18px;
+        font-size: 17px;
         background-color: #fff;
+        box-shadow: 1px 1px 5px #d3d2d2;
     }
 
     & span{
         position: absolute;
-        top: 18px;
-        left: 34px;
+        top: 13px;
+        left: 44px;
     }
 
 }

@@ -6,7 +6,8 @@ import picture from '../components/picture.json'
 
 const SliderStyled = styled.div`
 height: 354px;
-border-radius: 27px;
+border-radius: 19px;
+box-shadow: 1px 1px 5px #d3d2d2;
 overflow: hidden;
 margin-top: 15px;
 
@@ -15,7 +16,7 @@ margin-top: 15px;
 }
 
 & .awssld__wrapper{
-    height:350px;
+    height:360px;
 }
 
 `

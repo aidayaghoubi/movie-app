@@ -60,7 +60,7 @@ ${Transition};
     justify-content: space-evenly;
     background-color: #41d492;
     margin: 20px 17px;
-    border-radius: 14px;
+    border-radius: 18px;
 
     & img{
         height: 64px;
@@ -114,7 +114,7 @@ ${Transition};
                 color: #646765;
                 padding: 16px 0px;
                 margin-left: 12px;
-                border-radius: 15px;
+                border-radius: 18px;
                 width: 94%;
                 display: -webkit-box;
                 display: -webkit-flex;
@@ -188,14 +188,17 @@ const Header = () => {
 
     // const container = document.querySelector("#root > div:last-child");
     const container = document.querySelector("#root > div:nth-child(3)");
+    const body = document.getElementsByTagName("body");
 
     useEffect(()=>{
         setTimeout(()=>{
             if(!close){
-                container.style.transform="translate(115px , 0)";
+                container.style.transform="translate(230px , 0)";
+                document.body.style.overflowX="hidden";
                 
             }else{
                 container.style.transform="translate(0px , 0)";
+                document.body.style.overflowX="auto";
             }
         } , 50)
    

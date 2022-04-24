@@ -18,16 +18,17 @@ ${Transiton};
 & .wrapper{
     background-color: #fff;
     width: 77%;
-    border-radius: 15px;
+    border-radius: 19px;
     margin-top: -9px;
+    box-shadow: 1px 1px 5px #d3d2d2;
     margin-bottom: 32px;
 
     & .title{
         padding: 0px 13px;
-        margin-top: 16px;
-        font-size: 24px;
-        font-weight: bold;
-        color: #3f4240; 
+    margin-top: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #404441;
     }
 
     & .movie{
@@ -58,28 +59,31 @@ ${Transiton};
                 }
 
                 & span{
-                    color: gray;
-                    font-size: 19px;
+                    color: #484141;
+                    font-size: 16px;
                 }
                 & p{
-                    font-size: 13px;
+                    font-size: 10px;
                     background-color: #F5C518;
                     padding: 4px;
                     border-radius: 8px;
                     font-weight: bold;
-                    margin: 6px 8px;
+                    margin: 0px 8px;
                 }
             }
             & .titlee{
                 & p{
-                    font-size: 19px;
-                    margin: 0 5px;
+                    font-size: 16px;
+                    margin: 0px 5px;
+                    margin-top: 7px;
+                    margin-bottom: 5px;
+                    color: #786868;
                 }
                 & span{
                     margin: 2px 2px;
                     padding-left: 4px;
                     color: gray;
-                    font-size: 16px;
+                    font-size: 14px;
                     overflow: hidden;
                 }
             }
@@ -97,7 +101,7 @@ ${Transiton};
             background-color: #41D492;
             width: 90%;
             height: 40px;
-            border-radius: 7px;
+            border-radius: 12px;
             color: #fff;
             cursor:pointer;
         }
@@ -131,6 +135,11 @@ const RandomBox = ({ title }) => {
     //     return data
 
     // }
+
+
+    const onBtnMoreClickHandler = () => {
+
+    }
 
     const Movies = title === "Most Popular" ? Puplaritem?.items?.slice(1, 4).map((el , i) => {
         return <div className="movie" key={i}>
@@ -174,7 +183,7 @@ const RandomBox = ({ title }) => {
                 }
             </div>
             <div className="buttom">
-                <button>See More</button>
+                <button onClick={onBtnMoreClickHandler}>See More</button>
 
             </div>
         </div>

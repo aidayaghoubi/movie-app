@@ -21,9 +21,12 @@ margin-bottom: 15px;
     font-weight: bold;
     color: #919191;
     cursor:pointer;
+    transition: 0.2s;
 }
 & .active{
 color:black;
+font-size: 20px;
+text-shadow: 1px 1px 2px #b5b5b5;
 }
 
 `
