@@ -57,7 +57,7 @@ const RightSide = () => {
 
     const Tiltles = items.map((el, i) => {
         return <div 
-            className={state === el && "active"} 
+            className={state === el ? "active" : ""} 
             key={i} 
              onClick={() => onLinkClickHandler(el, i)}>
             {el}

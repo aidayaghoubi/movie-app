@@ -5,6 +5,7 @@ import Columns from "../main/column";
 import Slider from "../components/slider";
 import RandomBox from "../components/search/randomBox";
 
+
 const Home = () => {
 
     return <Container>
@@ -12,9 +13,11 @@ const Home = () => {
             <RightSide />
         </Columns>
         <Columns width="30%">
+
             <SearchMovie />
+
             <RandomBox title="Most Popular" />
-            <RandomBox title="Comming Soon"/>
+            <RandomBox title="Comming Soon" />
         </Columns>
 
     </Container>

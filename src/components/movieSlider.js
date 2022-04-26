@@ -81,10 +81,10 @@ margin-top: 35px;
 
 const MovieSlider = ({ items, name }) => {
 
-    console.log(items, 'keo doekdoe dekoded dkeode ');
+    
 
-    const SliderItem = items.items.slice(0, 12).map(el => {
-        return <div className="movie">
+    const SliderItem = items.items.slice(0, 12).map((el , i) => {
+        return <div className="movie" key={i}>
             <img src={el.image} />
             <p className="title">{el.title}</p>
             {el?.crew?.length > 1 && <p className="subtitle">{el.crew}</p>}

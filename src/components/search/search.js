@@ -1,6 +1,10 @@
 import { useState, useContext, useEffect, useCallback } from "react";
 import { debounce } from "lodash";
 import styled from "styled-components";
+import { Navigate } from "react-router-dom";
+import { SearchHistory } from "../../store/search-history";
+import { useNavigate } from "react-router-dom";
+
 // const API = http://www.omdbapi.com/?t=${inception}&apikey=537d549a;
 const SearchBox = styled.div`
 margin: 17px 15px;
@@ -79,9 +83,11 @@ const SearchMovie = () => {
     const [movie, setMovie] = useState('');
     const [searchedMovie, setsearchedMovie] = useState('');
     const [loading, setLoading] = useState(false);
-    const [status, setStatus] = useState()
+    const [status, setStatus] = useState();
+    const navigate = useNavigate()
 
-
+    const SearchCtx = useContext(SearchHistory);
+    
     useEffect(() => {
 
         if (movie) {
@@ -107,6 +113,12 @@ const SearchMovie = () => {
     }
 
 
+    const onMovieClickHandler = (props) => {
+        SearchCtx.addToState(props.el.Title.toLowerCase());
+       navigate(`/movie/:${props.el.Title}`)
+      
+    }
+
 
     //top movies == https://imdb-api.com/en/API/Top250Movies/k_t7nsiycr
     //top tv series ==  https://imdb-api.com/en/API/Top250TVs/k_t7nsiycr
@@ -123,6 +135,7 @@ const SearchMovie = () => {
     const handler = useCallback(debounce(() => { }, 100000), [])
 
     return (
+        
         <SearchBox>
             <div className="input">
                 <input
@@ -134,12 +147,12 @@ const SearchMovie = () => {
                 </input>
                 <span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="20.397" height="22.354" viewBox="0 0 20.397 22.354">
-                        <g id="Group_10" data-name="Group 10" transform="translate(-6889 4759)">
-                            <g id="Ellipse_101" data-name="Ellipse 101" transform="translate(6889 -4759)" fill="none" stroke="#707070" stroke-width="2">
+                        <g id="Group_10" dataName="Group 10" transform="translate(-6889 4759)">
+                            <g id="Ellipse_101" dataName="Ellipse 101" transform="translate(6889 -4759)" fill="none" stroke="#707070" strokeWidth="2">
                                 <circle cx="9.5" cy="9.5" r="9.5" stroke="none" />
                                 <circle cx="9.5" cy="9.5" r="8.5" fill="none" />
                             </g>
-                            <path id="Path_739" data-name="Path 739" d="M6875.251-4737.578l3.451,4.753" transform="translate(29.298 -5.218)" fill="none" stroke="#707070" stroke-linecap="round" stroke-width="2" />
+                            <path id="Path_739" dataName="Path 739" d="M6875.251-4737.578l3.451,4.753" transform="translate(29.298 -5.218)" fill="none" stroke="#707070" strokeLinecap="round" strokeWidth="2" />
                         </g>
                     </svg>
 
@@ -149,8 +162,8 @@ const SearchMovie = () => {
             {/* <p>{status}</p>
             <p>{loading && "loading..."}</p> */}
             <div className="movie_result">
-                {searchedMovie?.Search?.map(el => {
-                    return <a href="#" className="movie">
+                {searchedMovie?.Search?.map((el , i) => {
+                    return <a href="#" className="movie" onClick={() => onMovieClickHandler({el , i})} key={i}>
                         <img src={el.Poster} />
                         <div>
                             <p>{el.Title}</p>
