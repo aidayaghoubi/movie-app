@@ -4,6 +4,8 @@ import styled from "styled-components";
 import { Navigate } from "react-router-dom";
 import { SearchHistory } from "../../store/search-history";
 import { useNavigate } from "react-router-dom";
+import { Spin } from "antd";
+import { Modal , Button } from "antd";
 
 // const API = http://www.omdbapi.com/?t=${inception}&apikey=537d549a;
 const SearchBox = styled.div`
@@ -75,6 +77,14 @@ flex-direction:column;
     }
 
 }
+.example{
+    margin: 20px 0;
+  margin-bottom: 20px;
+  padding: 30px 50px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}
 
 `
 
@@ -84,10 +94,11 @@ const SearchMovie = () => {
     const [searchedMovie, setsearchedMovie] = useState('');
     const [loading, setLoading] = useState(false);
     const [status, setStatus] = useState();
+
     const navigate = useNavigate()
 
     const SearchCtx = useContext(SearchHistory);
-    
+
     useEffect(() => {
 
         if (movie) {
@@ -115,8 +126,8 @@ const SearchMovie = () => {
 
     const onMovieClickHandler = (props) => {
         SearchCtx.addToState(props.el.Title.toLowerCase());
-       navigate(`/movie/:${props.el.Title}`)
-      
+        navigate(`/movie/:${props.el.Title}`)
+
     }
 
 
@@ -135,7 +146,7 @@ const SearchMovie = () => {
     const handler = useCallback(debounce(() => { }, 100000), [])
 
     return (
-        
+
         <SearchBox>
             <div className="input">
                 <input
@@ -158,12 +169,16 @@ const SearchMovie = () => {
 
                 </span>
             </div>
-
-            {/* <p>{status}</p>
-            <p>{loading && "loading..."}</p> */}
+{/* 
+            <p>{status}</p>
+            {
+                loading && <div className="example">
+                    <Spin />
+                </div>
+            } */}
             <div className="movie_result">
-                {searchedMovie?.Search?.map((el , i) => {
-                    return <a href="#" className="movie" onClick={() => onMovieClickHandler({el , i})} key={i}>
+                {searchedMovie?.Search?.map((el, i) => {
+                    return <a href="#" className="movie" onClick={() => onMovieClickHandler({ el, i })} key={i}>
                         <img src={el.Poster} />
                         <div>
                             <p>{el.Title}</p>

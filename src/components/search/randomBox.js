@@ -4,6 +4,7 @@ import SearchMovie from "./search";
 import pupjson from '../pup-json.json'
 import comjson from '../comingSoon.json'
 import { css } from "styled-components";
+import { Navigate, useNavigate } from "react-router-dom";
 
 const Transiton = css`
 transotion:0.5s;
@@ -114,6 +115,8 @@ const RandomBox = ({ title }) => {
 
     const Puplaritem = pupjson;
     const Comitem = comjson;
+
+    const navigate = useNavigate()
   
 
     const [movies, setMovies] = useState('')
@@ -137,12 +140,19 @@ const RandomBox = ({ title }) => {
     // }
 
 
-    const onBtnMoreClickHandler = () => {
+    const onBtnMoreClickHandler = (props) => {
+
+        navigate(`/list/${props}`)
 
     }
 
+    const onMovieClickHandler = (props) => {
+      
+      navigate(`/movie/${props.title}`);
+    }
+
     const Movies = title === "Most Popular" ? Puplaritem?.items?.slice(1, 4).map((el , i) => {
-        return <div className="movie" key={i}>
+        return <div className="movie" key={i} onClick={() => onMovieClickHandler(el)}>
             <img src={el.image} />
             <div className="inner-wraper">
                 <div className="titlee">
@@ -155,7 +165,7 @@ const RandomBox = ({ title }) => {
             </div>
         </div>
     }) : Comitem?.items?.slice(0, 3).map((el , i) => {
-        return <div className="movie" key={i}>
+        return <div className="movie" key={i}  onClick={() => onMovieClickHandler(el)}>
             <img src={el.image} />
             <div className="inner-wraper">
                 <div className="titlee">
@@ -183,7 +193,7 @@ const RandomBox = ({ title }) => {
                 }
             </div>
             <div className="buttom">
-                <button onClick={onBtnMoreClickHandler}>See More</button>
+                <button onClick={() => onBtnMoreClickHandler(title)}>See More</button>
 
             </div>
         </div>

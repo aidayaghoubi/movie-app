@@ -5,6 +5,7 @@ import LastChecked from "../pages/last-checked"
 import WatchList from "../pages/watch-list";
 import Movie from "../pages/movie";
 import SearchPriveder from "../store/search-history";
+import MovieList from "../pages/movie-list";
 
 const Router = () => {
 
@@ -17,7 +18,7 @@ const Router = () => {
             <Route path="/favorite" element={<Favorite />} />
             <Route path="/last-checked" element={<LastChecked />} />
             <Route path="/watch-list" element={<WatchList />} />
-            <Route path="/list/:id" />
+            <Route path="/list/:id" element={<MovieList/>} />
             <Route path="/movie/:id" element={<Movie />} />
         </Routes>
     </SearchPriveder>
