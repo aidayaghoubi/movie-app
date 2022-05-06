@@ -81,8 +81,8 @@ const MovieList = () => {
 
     return <Container>
         <MovieListStyled>
-            {
-                movies?.items?.map((el, i) => {
+            {/* {
+                movies?.items?.slice(0,5).map((el, i) => {
                     return <div className="movie" key={i} onClick={() => onMovieClickHandler(el)}>
                         <img src={el.image} />
                         <div className="inner-wraper">
@@ -96,7 +96,8 @@ const MovieList = () => {
                         </div>
                     </div>
                 })
-            }
+            } */}
+          
         </MovieListStyled>
     </Container>
 
