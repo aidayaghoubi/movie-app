@@ -2,7 +2,8 @@ import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 import styled, { css } from "styled-components"
 import logo from '../assets/Group 8.png'
-import profile from '../assets/Group 9.png'
+
+import Profile from "../components/profile"
 
 const Transition = css`
 
@@ -67,7 +68,7 @@ ${Transition};
     }
 
     & div{
-&         color:#fff;
+        color:#fff;
 
         & .title{
             font-size: 19px;
@@ -238,22 +239,11 @@ const Header = () => {
         <HeaderStyled className="closee"
             style={{ transform: close ? "translate(-250%,0)" : "translate(0px ,0px)" }}>
             <div className="close">
-                {/* <svg onClick={onCloseHandler} xmlns="http://www.w3.org/2000/svg" width="16.596" height="16.596" viewBox="0 0 16.596 16.596">
-                    <g id="fi-br-cross" transform="translate(0 -20.157)">
-                        <path id="Path_102" data-name="Path 102" d="M9.765,8.3l6.528-6.527A1.038,1.038,0,0,0,14.825.3h0L8.3,6.832,1.771.3A1.038,1.038,0,0,0,.3,1.771L6.832,8.3.3,14.825a1.038,1.038,0,0,0,1.467,1.467L8.3,9.765l6.527,6.528a1.038,1.038,0,1,0,1.467-1.467Z" transform="translate(0 20.157)" fill="#646765" />
-                    </g>
-                </svg> */}
             </div>
             <div className="logo">
                 <img src={logo} />
             </div>
-            <div className="profile">
-                <img src={profile} />
-                <div>
-                    <p className="title">Aida Psterson</p>
-                    <p className="nnumber">0912456545</p>
-                </div>
-            </div>
+            <Profile className="profile" />
             <ul>
                 <li>
                     <Link
