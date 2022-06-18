@@ -12,7 +12,6 @@ const Router = () => {
 
     return <SearchPriveder>
         <Routes>
-
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
             <Route path="/favorite" element={<Favorite />} />

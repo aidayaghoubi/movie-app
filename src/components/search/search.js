@@ -91,6 +91,7 @@ flex-direction:column;
 const SearchMovie = () => {
 
     const [movie, setMovie] = useState('');
+    const [searchValue, setSearchValue] = useState();
     const [searchedMovie, setsearchedMovie] = useState('');
     const [loading, setLoading] = useState(false);
     const [status, setStatus] = useState();
@@ -105,6 +106,7 @@ const SearchMovie = () => {
             setLoading(true)
             searchMoviee(movie.toLowerCase()).then(response => {
                 setsearchedMovie(response);
+              console.log("d")
                 setLoading(false);
                 if (response.Response === "False" && response.Error === "Too many results.") {
                     setStatus("to many result")
@@ -139,11 +141,21 @@ const SearchMovie = () => {
 
 
     const onInputChangeHandler = ({ target: { value } }) => {
-        setMovie(value)
-        handler()
+        setSearchValue(value)
+        const handler = debounce(setMovie , 5000)
     }
 
-    const handler = useCallback(debounce(() => { }, 100000), [])
+    // const debounce = function(fn ,time ){
+
+    //     let timer;
+    //     clearTimeout(timer)
+    //      timer = setTimeout(() => {
+    //         fn(searchValue)
+    //     }, time);
+    // }
+
+    const debouncedCallback = debounce(setMovie, 400);
+    
 
     return (
 
@@ -152,18 +164,18 @@ const SearchMovie = () => {
                 <input
                     placeholder="Search"
                     type="text"
-                    value={movie}
+                    value={searchValue}
                     onChange={onInputChangeHandler}>
 
                 </input>
                 <span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="20.397" height="22.354" viewBox="0 0 20.397 22.354">
-                        <g id="Group_10" dataName="Group 10" transform="translate(-6889 4759)">
-                            <g id="Ellipse_101" dataName="Ellipse 101" transform="translate(6889 -4759)" fill="none" stroke="#707070" strokeWidth="2">
+                        <g id="Group_10" dataname="Group 10" transform="translate(-6889 4759)">
+                            <g id="Ellipse_101" dataname="Ellipse 101" transform="translate(6889 -4759)" fill="none" stroke="#707070" strokeWidth="2">
                                 <circle cx="9.5" cy="9.5" r="9.5" stroke="none" />
                                 <circle cx="9.5" cy="9.5" r="8.5" fill="none" />
                             </g>
-                            <path id="Path_739" dataName="Path 739" d="M6875.251-4737.578l3.451,4.753" transform="translate(29.298 -5.218)" fill="none" stroke="#707070" strokeLinecap="round" strokeWidth="2" />
+                            <path id="Path_739" dataname="Path 739" d="M6875.251-4737.578l3.451,4.753" transform="translate(29.298 -5.218)" fill="none" stroke="#707070" strokeLinecap="round" strokeWidth="2" />
                         </g>
                     </svg>
 
