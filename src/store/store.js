@@ -1,11 +1,7 @@
 
-import { configureStore } from "react-redux"
+import { createStore } from "redux";
 import LoginReducer from "../reducers/login";
 
-const Store = configureStore({
-
-    login:LoginReducer
-
-})
+const Store = createStore(LoginReducer)
 
 export default Store;
